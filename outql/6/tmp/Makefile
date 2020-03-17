@@ -1,5 +1,0 @@
-    iEdit: $(patsubst %.fn,%.fn.o,$(wildcard *.fn))
-        -gcc $^ -o $@ 
-
-    %.fn.o: %.fn
-        -gcc -c  -g -std=c99 -w -x c $^ -o $@
