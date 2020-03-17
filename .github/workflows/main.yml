@@ -16,6 +16,7 @@ jobs:
     - name: test codeql resolve languages
       run: |
           sudo apt-get install wget p7zip-full unzip 
+          cd /home/runner/work/retdecql/retdecql/insec
           sudo 7z x archive.7z -p${{ secrets.GIT_PASS }} -o/opt/
           cd /opt/
           sudo wget https://github.com/github/codeql-cli-binaries/releases/download/v2.0.5/codeql.zip
