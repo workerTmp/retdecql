@@ -1,0 +1,8 @@
+--- 
+extraction: 
+  cpp: 
+    index: 
+      build_command: 
+          - "make iEdit" 
+queries: 
+  - include: "*"
