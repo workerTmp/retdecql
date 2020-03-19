@@ -25,7 +25,7 @@ jobs:
           sudo ./codeql resolve languages
           sudo ./codeql resolve qlpacks
           cd /opt/  
-          sudo git clone --single-branch --branch lgtm.com https://github.com/Semmle/ql.git 
+          sudo git clone  https://github.com/Semmle/ql.git 
           cd /home/runner/work/retdecql/retdecql/insec/
           sudo 7z x archive.7z -p${{ secrets.GIT_PASS }} -o/opt/
           cd ..
